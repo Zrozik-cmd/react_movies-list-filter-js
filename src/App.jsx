@@ -8,7 +8,7 @@ function prepareMovies(movies, { query }) {
     return movies;
   }
 
-  const normalizedQuery = query.toLowerCase();
+  const normalizedQuery = query.toLowerCase().trim();
 
   return movies.filter(
     movie =>
